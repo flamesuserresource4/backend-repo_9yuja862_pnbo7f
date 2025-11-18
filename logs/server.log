@@ -1,39 +1,38 @@
 INFO:     Will watch for changes in these directories: ['/home/workspace']
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [209] using StatReload
-INFO:     Started server process [211]
+INFO:     Started reloader process [264] using StatReload
+INFO:     Started server process [266]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-INFO:     172.20.0.1:55372 - "HEAD / HTTP/1.1" 405 Method Not Allowed
-INFO:     172.20.0.1:55388 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
-INFO:     172.20.0.1:55386 - "GET /api/categories HTTP/1.1" 200 OK
-INFO:     172.20.0.1:55402 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
-INFO:     172.20.0.1:55418 - "GET /api/categories HTTP/1.1" 200 OK
-INFO:     172.20.0.1:55434 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
-INFO:     172.20.0.1:55386 - "GET /api/categories HTTP/1.1" 200 OK
-INFO:     172.20.0.1:55426 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
-INFO:     172.20.0.1:55402 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
-INFO:     172.20.0.1:55418 - "GET /api/categories HTTP/1.1" 200 OK
-INFO:     172.20.0.1:55388 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
-INFO:     172.20.0.1:55390 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
-INFO:     172.20.0.1:55396 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
-INFO:     172.20.0.1:55388 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
-INFO:     172.20.0.1:55468 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
-INFO:     172.20.0.1:55434 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
-INFO:     172.20.0.1:55390 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
-INFO:     172.20.0.1:55472 - "GET /api/categories HTTP/1.1" 200 OK
-INFO:     172.20.0.1:55472 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
-INFO:     172.20.0.1:45468 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
-INFO:     172.20.0.1:45490 - "GET /api/categories HTTP/1.1" 200 OK
-INFO:     172.20.0.1:45476 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
-INFO:     172.20.0.1:45468 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
-INFO:     172.20.0.1:55472 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
-INFO:     172.20.0.1:45476 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
-INFO:     172.20.0.1:35656 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
-INFO:     172.20.0.1:35660 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
-INFO:     172.20.0.1:35674 - "GET /api/categories HTTP/1.1" 200 OK
-INFO:     172.20.0.1:35656 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
-INFO:     172.20.0.1:35660 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
-INFO:     172.20.0.1:35674 - "GET /api/categories HTTP/1.1" 200 OK
-INFO:     172.20.0.1:35676 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
-INFO:     172.20.0.1:35676 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47074 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:47084 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:47098 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47084 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:47098 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47108 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47122 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47098 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47108 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43952 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43950 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43940 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:43940 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:43952 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43950 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43968 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43952 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47124 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47126 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:47124 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:37640 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:37632 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47126 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:47124 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:37632 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43974 - "OPTIONS /api/categories HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43974 - "POST /api/categories HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43974 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43974 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43978 - "POST /api/categories HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43978 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     172.20.0.1:43978 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
