@@ -1,0 +1,31 @@
+INFO:     Will watch for changes in these directories: ['/home/workspace']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [152] using StatReload
+INFO:     Started server process [154]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     172.20.0.1:38090 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:38110 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:38118 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:38110 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:38118 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:38094 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     172.20.0.1:38118 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     172.20.0.1:38120 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:38120 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:45806 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:45822 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:45798 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     172.20.0.1:45830 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:45822 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:45806 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:45798 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     172.20.0.1:45830 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:38140 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:38134 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     172.20.0.1:38140 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:50624 - "GET /api/budgets/2025-11 HTTP/1.1" 404 Not Found
+INFO:     172.20.0.1:50636 - "GET /api/categories HTTP/1.1" 200 OK
+INFO:     172.20.0.1:38134 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:38140 - "GET /api/expenses/2025-11 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:50636 - "GET /api/summary/2025-11 HTTP/1.1" 200 OK

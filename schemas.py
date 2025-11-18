@@ -12,37 +12,39 @@ Model name is converted to lowercase for the collection name:
 """
 
 from pydantic import BaseModel, Field
-from typing import Optional
+from typing import Optional, List
+from datetime import date
 
-# Example schemas (replace with your own):
+# Budgeting app schemas
 
-class User(BaseModel):
+class Category(BaseModel):
     """
-    Users collection schema
-    Collection name: "user" (lowercase of class name)
+    Categories collection schema
+    Collection name: "category"
     """
-    name: str = Field(..., description="Full name")
-    email: str = Field(..., description="Email address")
-    address: str = Field(..., description="Address")
-    age: Optional[int] = Field(None, ge=0, le=120, description="Age in years")
-    is_active: bool = Field(True, description="Whether user is active")
+    name: str = Field(..., description="Category name, e.g., Rent, Food, Investment")
+    emoji: Optional[str] = Field(None, description="Emoji/icon for the category, e.g., 🏠 🍔 💼")
 
-class Product(BaseModel):
+class Allocation(BaseModel):
+    category_id: str = Field(..., description="Reference to category _id as string")
+    target: float = Field(..., ge=0, description="Target amount for the month")
+
+class Budget(BaseModel):
     """
-    Products collection schema
-    Collection name: "product" (lowercase of class name)
+    Monthly budget plan
+    Collection name: "budget"
     """
-    title: str = Field(..., description="Product title")
-    description: Optional[str] = Field(None, description="Product description")
-    price: float = Field(..., ge=0, description="Price in dollars")
-    category: str = Field(..., description="Product category")
-    in_stock: bool = Field(True, description="Whether product is in stock")
+    month: str = Field(..., description="Month in YYYY-MM format")
+    income: float = Field(..., ge=0, description="Planned monthly income")
+    allocations: List[Allocation] = Field(default_factory=list, description="List of category targets")
 
-# Add your own schemas here:
-# --------------------------------------------------
-
-# Note: The Flames database viewer will automatically:
-# 1. Read these schemas from GET /schema endpoint
-# 2. Use them for document validation when creating/editing
-# 3. Handle all database operations (CRUD) directly
-# 4. You don't need to create any database endpoints!
+class Expense(BaseModel):
+    """
+    Expense entries for tracking actual spending
+    Collection name: "expense"
+    """
+    month: str = Field(..., description="Month in YYYY-MM format")
+    category_id: str = Field(..., description="Reference to category _id as string")
+    amount: float = Field(..., ge=0, description="Expense amount")
+    note: Optional[str] = Field(None, description="Optional note/description")
+    spent_on: Optional[date] = Field(None, description="Date of the expense")
